@@ -1,0 +1,19 @@
+### 1. Registrar un usuario (Admin de prueba)
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "nombre": "Admin Principal",
+  "email": "admin@restaurante.com",
+  "password": "password123",
+  "rol": "admin"
+}
+
+### 2. Login (Para obtener tu token)
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@restaurante.com",
+  "password": "password123"
+}
